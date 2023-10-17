@@ -25,9 +25,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'org.postgresql:postgresql'
+	implementation 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.liquibase:liquibase-core'
+	implementation 'org.springframework.retry:spring-retry:2.0.3'
+	implementation 'org.springframework.boot:spring-boot-starter-aop:3.1.2'
 }
 
 tasks.named('test') {
