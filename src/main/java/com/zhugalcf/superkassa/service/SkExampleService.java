@@ -27,7 +27,6 @@ public class SkExampleService {
 
     private final SkExampleRepository skExampleRepository;
     private final MapToJsonbMapper mapToJsonbMapper;
-    //@Value("${sk-example.json.obj-key:}")
     private static final String OBJ_KEY = "current";
 
     @Transactional
